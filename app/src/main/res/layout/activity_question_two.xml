@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_question_two"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fernandoapeguero.quizit.QuestionTwo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/image_style"
+            android:src="@drawable/statue_of_liberty"/>
+
+        <TextView
+            android:id="@+id/statue_liberty_question"
+            style="@style/header_style"/>
+
+        <TextView
+            style="@style/sub_hear_style"
+            android:text="@string/hint"/>
+
+        <TextView
+            android:id="@+id/checkbox_your_liberty_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"/>
+
+        <EditText
+            android:id="@+id/liberty_edit_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:hint="@string/enter_answer"
+            android:imeOptions="actionDone"
+            android:singleLine="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+
+        <Button
+            android:id="@+id/submit_liberty_answer"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="question_1">#D32F2F</color>
+    <color name="question_2">#512DA8</color>
+    <color name="question_3">#1976D2</color>
+    <color name="question_4">#388E3C</color>
+    <color name="question_5">#FBC02D</color>
+    <color name="question_6">#E64A19</color>
+    <color name="grade_color">#37474F</color>
+
+
+
+</resources>

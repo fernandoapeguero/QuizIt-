@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_question_five"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fernandoapeguero.quizit.QuestionFive">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            style="@style/image_style"
+            android:src="@drawable/grand_canyon"
+            />
+        <TextView
+            style="@style/header_style"
+            android:id="@+id/grand_canyon_question"/>
+
+        <TextView
+            style="@style/sub_hear_style"
+            android:text="@string/select_your_answer"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group_canyon1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="20dp">
+
+            <RadioButton
+                android:id="@+id/radioButton_canyon"
+                style="@style/radio_button_style"
+                android:text="" />
+
+            <RadioButton
+                android:id="@+id/radioButton_canyon2"
+                style="@style/radio_button_style"
+
+                android:hint="@string/zhou" />
+
+            <RadioButton
+                android:id="@+id/radioButton_canyon3"
+                style="@style/radio_button_style"
+                android:hint="@string/qin" />
+        </RadioGroup>
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

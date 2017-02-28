@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">QuizIt</string>
+    <string name="first_question">First Question</string>
+    <string name="second_question">Second Question</string>
+    <string name="third_question">Third Question</string>
+    <string name="fourth_question">Fourth Question</string>
+    <string name="fifth_question">Fifth Question</string>
+    <string name="sixth_question">Sixth Question</string>
+    <string name="grade">Grade</string>
+
+    <string name="next_question">Next</string>
+    <string name="answer">Answer</string>
+    <string name="next">Next</string>
+    <string name="restart">Restart</string>
+    <string name="zues_location">What city is this statue of Zues located ?</string>
+    <string name="greece">Greece</string>
+    <string name="italy">Italy</string>
+    <string name="spain">Spain</string>
+    <string name="france">France</string>
+    <string name="portugal">Portugal</string>
+    <string name="qin">Qin Dynasty</string>
+    <string name="tang">Tang Dynasty</string>
+    <string name="zhou">Zhou Dynasty</string>
+    <string name="belize">Belize</string>
+    <string name="maldives">Maldives</string>
+    <string name="philipines">Philippines</string>
+    <string name="miles">Miles</string>
+    <string name="please_enter_your_answer">Please enter your answer</string>
+    <string name="visual_q">Select or Enter your answer as shown</string>
+    <string name="correct">Correct</string>
+    <string name="incorrect">Incorrect</string>
+    <string name="check_your_answer">Check your last answer</string>
+    <string name="kilometers">Kilometers</string>
+    <string name="yards">Yards</string>
+    <string name="submit">Submit</string>
+    <string name="enter_answer">enter answer</string>
+    <string name="noel">Noel</string>
+    <string name="gustave">Gustave</string>
+    <string name="gabriel">Gabriel</string>
+    <string name="name_and_year">Select the year and the name</string>
+    <string name="hint">Upper case first letter for country name</string>
+    <string name="select_your_answer">Select the right answer</string>
+
+
+</resources>

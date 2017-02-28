@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.fernandoapeguero.quizit">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".QuestionOne"
+                  android:label="Question One"
+                  android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:name=".QuestionTwo"
+                  android:label="Question Two"
+                  android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:name=".QuestionThree"
+                  android:label="Question Three"
+                  android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:name=".QuestionFour"
+                  android:label="Question Four"
+                  android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:name=".QuestionFive"
+                  android:label="Question Five"
+                  android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:name=".QuestionSix"
+                  android:label="Question Six"
+                  android:parentActivityName=".MainActivity">
+        </activity>
+    </application>
+
+</manifest>

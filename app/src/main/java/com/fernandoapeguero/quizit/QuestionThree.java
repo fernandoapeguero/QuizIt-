@@ -21,10 +21,12 @@ public class QuestionThree extends AppCompatActivity {
         eiffelQuestion.setText(bookOfQuestion.getQuestion(2));
 
         Intent getIntent = getIntent();
-        bookOfQuestion.setTotalScore(getIntent.getIntExtra("passScoreThird", 0));
+        bookOfQuestion.setTotalScore(getIntent.getIntExtra("passedScoreThird", 0));
         bookOfQuestion.setCloseOne(getIntent.getIntExtra("passCloseOne", 0));
-        bookOfQuestion.setCloseTwo(getIntent.getIntExtra("passCloseTwo" , 0));
-        bookOfQuestion.setCloseFourth(getIntent.getIntExtra("passCloseFourth",0));
+        bookOfQuestion.setCloseTwo(getIntent.getIntExtra("passCloseTwo", 0));
+        bookOfQuestion.setCloseFourth(getIntent.getIntExtra("passCloseFourth", 0));
+        bookOfQuestion.setCloseFifth(getIntent.getIntExtra("passCloseFifth", 0));
+        bookOfQuestion.setCloseSixth(getIntent.getIntExtra("passCloseSixth", 0));
 
         submitAnswer();
     }
@@ -44,22 +46,22 @@ public class QuestionThree extends AppCompatActivity {
         eiffelSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent thirdIntent = new Intent(QuestionThree.this,MainActivity.class);
-                if (yearBuild.isChecked() && gutaveCheckBox.isChecked() && !year1885.isChecked() && !year1889.isChecked() && !noelCheckBox.isChecked() && !gabrielCheckBox.isChecked()){
+                Intent thirdIntent = new Intent(QuestionThree.this, MainActivity.class);
+                if (yearBuild.isChecked() && gutaveCheckBox.isChecked() && !year1885.isChecked() && !year1889.isChecked() && !noelCheckBox.isChecked() && !gabrielCheckBox.isChecked()) {
                     bookOfQuestion.setTotalScore(1);
                     bookOfQuestion.setCloseThird(1);
-                } else if (year1885.isChecked() || year1889.isChecked() || noelCheckBox.isChecked() || gabrielCheckBox.isChecked()){
+                } else if (year1885.isChecked() || year1889.isChecked() || noelCheckBox.isChecked() || gabrielCheckBox.isChecked()) {
                     bookOfQuestion.setCloseThird(1);
                 }
                 thirdIntent.putExtra("passScoreThird", bookOfQuestion.getTotalScore());
                 thirdIntent.putExtra("passCloseOne", bookOfQuestion.getCloseOne());
                 thirdIntent.putExtra("passCloseTwo", bookOfQuestion.getCloseTwo());
-                thirdIntent.putExtra("passCloseThird" , bookOfQuestion.getCloseThird());
+                thirdIntent.putExtra("passCloseThird", bookOfQuestion.getCloseThird());
                 thirdIntent.putExtra("passCloseFourth", bookOfQuestion.getCloseFourth());
+                thirdIntent.putExtra("passCloseFifth", bookOfQuestion.getCloseFifth());
+                thirdIntent.putExtra("passCloseSixth", bookOfQuestion.getCloseSixth());
                 startActivity(thirdIntent);
             }
         });
-
-
     }
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
     <LinearLayout
 
         xmlns:tools="http://schemas.android.com/tools"
@@ -12,44 +12,64 @@
         android:orientation="vertical"
         tools:context="com.fernandoapeguero.quizit.MainActivity">
 
-
-
         <TextView
             android:id="@+id/question_1"
             style="@style/text_style_main"
             android:background="@color/question_1"
-            android:text="@string/first_question"
-            />
+            android:text="@string/first_question" />
+
         <TextView
             android:id="@+id/question_2"
             style="@style/text_style_main"
             android:background="@color/question_2"
-            android:text="@string/second_question"/>
+            android:text="@string/second_question" />
+
         <TextView
             android:id="@+id/question_3"
             style="@style/text_style_main"
             android:background="@color/question_3"
-            android:text="@string/third_question"/>
+            android:text="@string/third_question" />
+
         <TextView
             android:id="@+id/question_4"
             style="@style/text_style_main"
             android:background="@color/question_4"
-            android:text="@string/fourth_question"/>
+            android:text="@string/fourth_question" />
+
         <TextView
             android:id="@+id/question_5"
             style="@style/text_style_main"
             android:background="@color/question_5"
-            android:text="@string/fifth_question"/>
+            android:text="@string/fifth_question" />
+
         <TextView
             android:id="@+id/question_6"
             style="@style/text_style_main"
             android:background="@color/question_6"
-            android:text="@string/sixth_question"/>
-        <TextView
-            style="@style/text_style_main"
-            android:background="@color/grade_color"
-            android:text="@string/grade"/>
+            android:text="@string/sixth_question" />
 
+        <LinearLayout
 
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <Button
+                android:id="@+id/main_screen_restart"
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/restart"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/grade_the_quiz"
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/grade"
+                android:textSize="36sp" />
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

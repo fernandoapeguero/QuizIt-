@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_question_one"
     android:layout_width="match_parent"
@@ -14,7 +13,7 @@
 
         <ImageView
             style="@style/image_style"
-            android:src="@drawable/statue_of_zeus_at_olympia"/>
+            android:src="@drawable/statue_of_zeus_at_olympia" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -25,11 +24,11 @@
 
             <TextView
                 android:id="@+id/ask_question"
-                style="@style/header_style"/>
+                style="@style/header_style" />
 
             <TextView
                 style="@style/sub_hear_style"
-                android:text="@string/select_your_answer"/>
+                android:text="@string/select_your_answer" />
 
             <RadioGroup
                 android:id="@+id/radio_group"
@@ -41,24 +40,24 @@
                 <RadioButton
                     android:id="@+id/radioButton"
                     style="@style/radio_button_style"
-                    android:text="@string/spain"/>
+                    android:text="@string/spain" />
 
                 <RadioButton
                     android:id="@+id/radioButton2"
                     style="@style/radio_button_style"
-                    android:text="@string/greece"/>
+                    android:text="@string/greece" />
 
                 <RadioButton
                     android:id="@+id/radioButton3"
                     style="@style/radio_button_style"
-                    android:text="@string/italy"/>
+                    android:text="@string/italy" />
             </RadioGroup>
         </LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@android:color/darker_gray"/>
+            android:background="@android:color/darker_gray" />
 
         <Button
             android:id="@+id/submit_answer"
@@ -66,7 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/submit"
-            android:textAppearance="?android:textAppearanceLarge"/>
+            android:textAppearance="?android:textAppearanceLarge" />
 
     </LinearLayout>
 </ScrollView>

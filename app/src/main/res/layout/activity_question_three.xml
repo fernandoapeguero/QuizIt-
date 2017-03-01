@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_question_three"
     android:layout_width="match_parent"
@@ -14,11 +13,11 @@
 
         <ImageView
             style="@style/image_style"
-            android:src="@drawable/eiffel_tower"/>
+            android:src="@drawable/eiffel_tower" />
 
         <TextView
             android:id="@+id/eiffel_ask_question"
-            style="@style/header_style"/>
+            style="@style/header_style" />
 
         <TextView
             android:layout_width="match_parent"
@@ -27,7 +26,7 @@
             android:paddingBottom="16dp"
             android:text="@string/name_and_year"
             android:textSize="20sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,19 +43,19 @@
                     android:id="@+id/the_year_build"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1887"/>
+                    android:text="1887" />
 
                 <CheckBox
                     android:id="@+id/year_1885"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1885"/>
+                    android:text="1885" />
 
                 <CheckBox
                     android:id="@+id/year_1889"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1889"/>
+                    android:text="1889" />
             </LinearLayout>
 
             <LinearLayout
@@ -69,26 +68,26 @@
                     android:id="@+id/noel_incorrect"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/noel"/>
+                    android:text="@string/noel" />
 
                 <CheckBox
                     android:id="@+id/gustave_eiffel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/gustave"/>
+                    android:text="@string/gustave" />
 
                 <CheckBox
                     android:id="@+id/gabriel_incorrect"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/gabriel"/>
+                    android:text="@string/gabriel" />
             </LinearLayout>
         </LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@android:color/darker_gray"/>
+            android:background="@android:color/darker_gray" />
 
         <Button
             android:id="@+id/submit_eiffel"
@@ -96,6 +95,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="@string/submit"/>
+            android:text="@string/submit" />
     </LinearLayout>
 </ScrollView>

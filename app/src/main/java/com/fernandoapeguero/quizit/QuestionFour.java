@@ -16,6 +16,10 @@ public class QuestionFour extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question_four);
+
+        TextView greatWallQuestion = (TextView) findViewById(R.id.china_question);
+        greatWallQuestion.setText(bookOfQuestion.getQuestion(3));
+
 // getting data thought intent to keep values intact
         Intent getIntent = getIntent();
         bookOfQuestion.setTotalScore(getIntent.getIntExtra("passedScoreFourth", 0));
@@ -24,8 +28,6 @@ public class QuestionFour extends AppCompatActivity {
         bookOfQuestion.setCloseThird(getIntent.getIntExtra("passCloseThird", 0));
         bookOfQuestion.setCloseFifth(getIntent.getIntExtra("passCloseFifth", 0));
         bookOfQuestion.setCloseSixth(getIntent.getIntExtra("passCloseSixth", 0));
-        TextView greatWallQuestion = (TextView) findViewById(R.id.china_question);
-        greatWallQuestion.setText(bookOfQuestion.getQuestion(3));
 
         submitOrder();
     }
